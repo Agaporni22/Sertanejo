@@ -3,11 +3,16 @@ document.addEventListener('DOMContentLoaded', function(){
     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
     const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
     const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
+    const alternaContraste = document.getElementById('alterna-contraste')
 
     botaoDeAcessibilidade.addEventListener('click', function (){
     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
 })
+
+    alternaContraste.addEventListener('click', function(){
+         document.body.classList.toggle('alto-contraste')
+ })
 
     let tamanhoAtualFonte = 1;
     aumentaFonteBotao.addEventListener('click', function(){
